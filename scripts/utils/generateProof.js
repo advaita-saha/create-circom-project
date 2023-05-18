@@ -5,7 +5,7 @@ const appRoot = require('app-root-path');
 async function generateProof(value){
 
     const poseidon = await circomlibjs.buildPoseidon();
-    const hash = poseidon.F.toString(poseidon([10]));
+    const hash = poseidon.F.toString(poseidon([value]));
 
     const { proof, publicSignals } = await groth16.fullProve(
         { in: value, hash: hash },
