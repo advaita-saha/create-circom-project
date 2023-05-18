@@ -25,7 +25,7 @@ npm i
 npm run build
 npm run setup
 npm run verify
-npm run generateVerifier
+npm run generate-verifier
 ```
 - To clean the existing build files
 ```bash
